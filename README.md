@@ -1,7 +1,7 @@
 # SciTweets-Emo
 Emotion Analysis on informal online scientific discourse
 
-This repository contains our work towards a new annotation of the SciTweets dataset along with the accompanying analysis. Both of the annotation layers were done manually, the first one labeled the tweets based on their science relatedness. The four label for that layer are scientific claim, scientific context, scientific reference, non science related. The second annotation layer was done according to the emotions the tweets convey, using Ekman's Model.
+This repository contains our work towards a new annotation of the SciTweets dataset along with the accompanying analysis. Both of the annotation layers were done manually, the first one labeled the tweets based on their science relatedness. The four label for that first annotation are scientific claim, scientific context, scientific reference and non science related. The second annotation layer was done according to the emotions the tweets convey, using Ekman's Model.
 The work presented here was conducted between january and July 2025 by four computer science students : Tony BESSE, Lucien BOUBY, Alain LE et Anton Verbovyi.
 
 ## Table of Content
