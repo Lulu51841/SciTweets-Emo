@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 largeur_barre = 0.8
 largeur_barre2 = 0.3
-Ekman = ['peur','colère','joie','surprise','tristesse','dégoût']
+Ekman = ['fear','anger','joy','surprise','sadness','disgust']
 
 import pandas as pd
 import numpy as np
@@ -57,8 +57,8 @@ fig = plt.figure(figsize=(15,8))
 ax1 = plt.bar(position1, scientific_tweet, width = largeur_barre, color = "red")
 ax2 = plt.bar(position1, non_scientific_tweet, width = largeur_barre, bottom = scientific_tweet, color = "blue")
 ax3 = plt.bar(position2, allDataset, width=largeur_barre2, color="orange")
-plt.title('amout of tweets labeled with each emotion in each category',loc="left")
-fig.legend([ax1,ax2,ax3],["scientific tweets","non_scientifc tweets","precentage of tweets labeled with the emotion in all the dataset"],loc="outside upper right")
+#plt.title('amout of tweets labeled with each emotion in each category',loc="left")
+fig.legend([ax1,ax2,ax3],["scientific tweets","non_scientifc tweets","precentage of tweets labeled with the emotion in all the dataset"],loc="outside upper center",fontsize="large")
 plt.xticks(position1, Ekman)
 
 #----------------------------------- second graph ------------------------------
@@ -107,7 +107,7 @@ plt.legend([ax1,ax3],["Average Context and Reference","claims"])
 plt.xticks([i for i in range(6)],Ekman)
 plt.title("the difference in emotions distributions between scientific_claims nd the rest of the science_related class")
 
-#------------------------- troisième graph -------------------------------------
+#------------------------- third graph -------------------------------------
 
 plt.figure(figsize=(8,6))
 ax1, =plt.plot(emotionsContext,'o',color="green")

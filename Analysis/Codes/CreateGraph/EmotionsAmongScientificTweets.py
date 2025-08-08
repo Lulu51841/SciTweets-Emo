@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import re
 
 df = pd.read_excel("../../../SciTweets-Emo.xlsx")
-Ekman = ['peur','colère','joie','surprise','tristesse','dégoût','neutre']
+Ekman = ['fear','anger','joy','surprise','sadness','disgust','neutral']
 largeur_barre = 0.8
 largeur_barre2 = 0.3
 scientific_tweet = [0,0,0,0,0,0,0]
@@ -46,7 +46,7 @@ ax1 = plt.bar(position1, scientific_tweet, width = largeur_barre, color = "red")
 ax2 = plt.bar(position1, non_scientific_tweet, width = largeur_barre, bottom = scientific_tweet, color = "blue")
 ax3 = plt.bar(position2, allDataset, width=largeur_barre2, color="orange")
 #plt.title('amout of tweets labeled with each emotion in each category',loc="left")
-fig.legend([ax1,ax2,ax3],["scientific tweets","non_scientifc tweets","precentage of tweets labeled with the emotion in all the dataset"],loc="outside upper right")
+fig.legend([ax1,ax2,ax3],["scientific tweets","non_scientifc tweets","precentage of tweets labeled with the emotion in all the dataset"],loc="outside upper center",fontsize="large")
 plt.xticks(position1, Ekman)
 
 #Objectif faire 3 diagrammes pour chaque type de tweets scientifiques
